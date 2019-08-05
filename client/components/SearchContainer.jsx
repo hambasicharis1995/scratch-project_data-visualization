@@ -1,3 +1,5 @@
+// you dont need a constructor if your component is not statement
+
 import React from 'react';
 
 // import components
@@ -15,7 +17,7 @@ class SearchContainer extends React.Component {
     render() {
         return (
             <div id='SearchContainer' className='animated heartBeat'>
-                <Search updateState={this.updateState} data={this.props.data}></Search>
+                <Search updateState={this.props.updateState} data={this.props.data}></Search>
             </div>
         )
     }

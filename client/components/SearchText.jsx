@@ -38,10 +38,9 @@ class SearchText extends React.Component {
                 .then(response => {
                     // console.log(response['labels']);
                     // console.log(response['values']);
-                    
-                    // sets state for only this component
+                
                     // this.setState({
-                        // ...state,
+                    //     // ...state,
                     //     data: {
                     //         labels: response['labels'],
                     //         // values: response['values']
@@ -77,7 +76,7 @@ class SearchText extends React.Component {
                     this.props.data.datasets[0].data = [231, 98, 2, 180, 134, 12, 69];
                     // console.log(this.props.data);
                     // console.log(response);
-                    // this.props.updateState(response);
+                    this.props.updateState(response);
                     return;
                 })
         }

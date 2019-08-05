@@ -15,7 +15,7 @@ class Search extends React.Component {
     render() {
         return (
             <div id='Search'>
-                <SearchText updateState={this.updateState} data={this.props.data}></SearchText>
+                <SearchText updateState={this.props.updateState} data={this.props.data}></SearchText>
             </div>
         )
     }
