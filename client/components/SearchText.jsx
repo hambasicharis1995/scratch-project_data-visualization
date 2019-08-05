@@ -15,7 +15,8 @@ class SearchText extends React.Component {
         this.search = this.search.bind(this);
     }
     search(event) {
-        console.log('keyed up');
+        // console.log('keyed up');
+        console.log('E.TARGET.VALUE = ' + event.target.value)
             if (event.defaultPrevented) {
                 return;
             }
@@ -31,11 +32,11 @@ class SearchText extends React.Component {
                     })
                 })
                 .then(function(response) {
-                    // console.log(response.json());
                     return response.json();
                 })
                 // use an arrow function to re-bind
                 .then(response => {
+<<<<<<< HEAD
                     // console.log(response['labels']);
                     // console.log(response['values']);
                 
@@ -77,6 +78,10 @@ class SearchText extends React.Component {
                     // console.log(this.props.data);
                     // console.log(response);
                     this.props.updateState(response);
+=======
+                    console.log(response);
+                    this.props.updateState(response)
+>>>>>>> be073e1c754da6f8986dc22a7c97e69795ba95f6
                     return;
                 })
         }
